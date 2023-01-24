@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+  font-family: Shrikhand;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: rgb(65, 40, 156);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Crea dos columnas/cajas que floten una al lado de la otra */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Estilos de la barra de navegación */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin:auto;
+  width:55%;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 300px;
+ 
+}
+
+td{
+  padding-left: 10px;
+}
+
+#col1{
+  vertical-align: top;
+}
+
+#Ho{
+  display: block;
+}
+
+#Ex {
+  display: none;
+  font-size: 1.2em;
+}
+
+#Hab {
+  display: none;
+  font-size: 1.2em;
+}
+
+#IP {
+  display: none;
+  font-size: 1.2em;
+  
+}
+
+
+/* Limpia ambos flotantes después de las columnas */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align:right;
+  color: white;
+}
+
+/* Diseño responsive: hace que las dos columnas/cajas se apilen una encima de la otra en lugar de una al lado de la otra, en pantallas pequeñas */
+@media (max-width: 600px) {
+
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  width: 8em;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  }
+
+/* Fondo más oscuro al pasar el mouse */
+.btn:hover {
+  background-color: RoyalBlue;
+}
